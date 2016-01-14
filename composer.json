@@ -1,0 +1,31 @@
+{
+    "name": "maxwelldu/yii2-sms",
+    "description": "yii2-sms expand",
+    "keywords": ["yii2", "sms", "sdk"],
+    "homepage": "https://github.com/maxwelldu/yii2-sms",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "maxwelldu",
+            "email": "1413161683@qq.com"
+        }
+    ],
+    "support": {
+       "issues": "https://github.com/maxwelldu/yii2-sms/issues",
+       "source": "https://github.com/maxwelldu/yii2-sms"
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "yiisoft/yii2": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "maxwelldu\\sdk\\": "src"
+        }
+    }
+
+}
