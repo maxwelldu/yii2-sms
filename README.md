@@ -59,6 +59,6 @@ composer install
 please update apiAccount and apiPassword and mobile in tests/ChuanglanTest.php file
 
 ```
-phpunit
+./vendor/bin/phpunit
 ```
 

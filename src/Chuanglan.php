@@ -127,7 +127,6 @@ class Chuanglan extends Component
             '119' => '用户已过期',
             '120' => '测试帐号限定验证码内容,非验证码内容不可提交',
         ];
-        var_dump($messages[$state]);
         $this->setError($messages[$state] );
 
         $success = $state == 0;
