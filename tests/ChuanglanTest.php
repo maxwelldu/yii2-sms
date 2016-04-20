@@ -14,7 +14,9 @@ class ChuanglanTest extends PHPUnit_Framework_TestCase
         $this->component = Yii::createObject([
            'class' => Chuanglan::className(),
             'apiAccount' => 'xxx',
-            'apiPassword' => 'xxx'
+            'apiPassword' => 'xxx',
+            'apiSendUrl' => 'http://222.73.117.156/msg/HttpBatchSendSM',
+            'apiBalanceQueryUrl' => 'http://222.73.117.156/msg/QueryBalance',
         ]);
     }
 

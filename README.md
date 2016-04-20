@@ -29,6 +29,8 @@ return [
             'class' => 'maxwelldu\\sdk\\Chuanglan',
             'apiAccount' => 'your chuanglan apiAccount',
             'apiPassword' => 'your chuanglan apiPassword',
+            'apiSendUrl' => 'http://222.73.117.156/msg/HttpBatchSendSM',
+            'apiBalanceQueryUrl' => 'http://222.73.117.156/msg/QueryBalance',
         ],
     ],
 ];

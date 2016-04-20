@@ -17,9 +17,9 @@ class Chuanglan extends Component
 {
     const LOG_CATEGORY = 'sms.chuanglan';
     /* 发送短信接口URL */
-    public $apiSendUrl = 'http://222.73.117.158/msg/HttpBatchSendSM';
+    public $apiSendUrl;
     /* 余额查询接口URL */
-    public $apiBalanceQueryUrl = 'http://222.73.117.158/msg/QueryBalance';
+    public $apiBalanceQueryUrl;
     /* 帐号 */
     public $apiAccount;
     /* 密码 */
@@ -49,6 +49,14 @@ class Chuanglan extends Component
 
     public function init()
     {
+        if ($this->apiSendUrl === NULL) 
+        {
+            throw new InvalidConfigException("The ApiSendUrl property must be set.");
+        }
+        if ($this->apiBalanceQueryUrl === NULL) 
+        {
+            throw new InvalidConfigException("The ApiBalanceQueryUrl property must be set.");
+        }
         if ($this->apiAccount === NULL)
         {
             throw new InvalidConfigException("The apiAccount property must be set.");
